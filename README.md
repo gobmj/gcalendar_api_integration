@@ -1,30 +1,47 @@
 # Python on Replit
 
-This is a template to get you started with Python on Replit. It's ready to go so you can just hit run and start coding!
+Welcome to Python on Replit! This README provides you with a quick start guide to get your Python projects up and running seamlessly.
 
-## Running the repl
+## Getting Started
 
-1. Setup a new secret environment variable (the lock icon) where the key is `SECRET_KEY` and the value is
-   a randomly generated token of 32 bits of randomnese. To generate such a token type this into the shell and hit Enter:
-```
-python
-import secrets
-secrets.token_urlsafe(32)
-```
-2. Hit run!
+1. **Secret Key Setup**
+   To enhance the security of your project, we recommend setting up a secret environment variable for sensitive data. Follow these steps to generate a secure random token for your `SECRET_KEY`:
 
-See this 1 minute video for a walkthrough: [https://www.loom.com/share/ecc4e738149f4d1db3bcff01758b3e71](https://www.loom.com/share/341b5574d12040fb9fcbbff150777f1c)
+   - Open the shell by clicking on the shell icon.
+   - Type the following Python code and press Enter:
 
-## Installing packages
+     ```python
+     import secrets
+     secrets.token_urlsafe(32)
+     ```
 
-To add packages to your repl, you can just import directly in the file you want to use the package in, and it will automatically be installed when you press the run button. Like below:
-```python
-import math
-import pandas as pd
-```
+   - Copy the generated token and create a new secret environment variable named `SECRET_KEY`, then paste the token as its value.
 
-You could also install packages by using the Replit packager interface in the left sidebar.
+2. **Running Your Project**
+   With your `SECRET_KEY` in place, simply hit the run button, and your Python code will start executing.
 
-## Help
+If you prefer visual guidance, check out our [1-minute walkthrough video](https://www.loom.com/share/341b5574d12040fb9fcbbff150777f1c) for a step-by-step demonstration.
 
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
+## Installing Packages
+
+Adding external packages to your project is a breeze on Replit. You have two options:
+
+1. **Import Directly in Your Code**
+   - To use a package, import it directly in the Python file where you need it.
+   - When you hit the run button, Replit will automatically install the required packages for you.
+
+   Example:
+   ```python
+   import math
+   import pandas as pd
+   ```
+
+2. **Use the Replit Packager Interface**
+   - Alternatively, you can manage your project's packages using the Replit packager interface located in the left sidebar.
+
+## Need Help?
+
+If you encounter any issues or need assistance, we've got you covered:
+
+- Explore our comprehensive [documentation](https://docs.replit.com) for answers to common questions and detailed information about Replit's features.
+- Don't hesitate to report any bugs or provide feedback; we value your input. Visit our [support page](https://replit.com/support) to get in touch with us.
