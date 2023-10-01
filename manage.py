@@ -3,6 +3,7 @@
 import os
 
 my_secret = os.environ['SECRET_KEY']
+#here the secret key is added
 import sys
 
 
@@ -18,6 +19,6 @@ def main():
             "forget to activate a virtual environment?") from exc
     execute_from_command_line(sys.argv)
 
-
+#main function
 if __name__ == '__main__':
     main()
